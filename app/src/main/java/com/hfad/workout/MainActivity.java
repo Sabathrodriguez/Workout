@@ -3,6 +3,7 @@ package com.hfad.workout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onShowDetails() {
+    public void onShowDetails(View view) {
         Intent intent = new Intent(this, DetailActivity.class);
         startActivity(intent);
     }
